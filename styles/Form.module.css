@@ -1,0 +1,27 @@
+.form {
+  width: 60vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inp,
+.msg {
+  width: 100%;
+  margin: 5px 0;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid gold;
+  border-radius: 11px;
+  box-shadow: 0 0 3px -1px gold;
+  color: var(--light-gold);
+}
+
+.btn {
+  margin-top: 42px;
+  padding: 10px 15px;
+  background: linear-gradient(to top, black, gold);
+  border: none;
+  border-radius: 7px;
+}

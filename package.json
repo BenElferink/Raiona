@@ -1,0 +1,20 @@
+{
+  "homepage": "https://rca.vercel.app/",
+  "name": "raiona_nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "framer-motion": "^4.1.11",
+    "next": "10.2.0",
+    "next-images": "^1.7.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-particles-js": "^3.4.1",
+    "swiper": "^6.5.9"
+  }
+}

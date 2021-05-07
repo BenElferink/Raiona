@@ -1,0 +1,48 @@
+.banner {
+  width: 100vw;
+  height: 500px;
+  background: url("../images/hero.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  box-shadow: 0 0 1rem 0.7rem black;
+}
+
+.banner > div {
+  flex: 1;
+  display: grid;
+  place-items: center;
+}
+
+.btn {
+  margin-top: 200px;
+  padding: 7px 14px;
+  background-color: gold;
+  border: none;
+  border-radius: 11px;
+  box-shadow: 0 0 2px var(--light-gold);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .banner {
+    height: 700px;
+  }
+
+  .btn {
+    margin-top: 400px;
+    padding: 10px 20px;
+    font-size: 22px;
+  }
+}
