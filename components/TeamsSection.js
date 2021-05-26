@@ -1,4 +1,4 @@
-import { useState, Children, useEffect } from "react";
+import { useState, Children } from "react";
 import styles from "../styles/Teams.module.css";
 import { teamPeople } from "../data/teams.js";
 
@@ -13,7 +13,7 @@ export default function TeamsSection() {
             src={person.src}
             ModalText={person.ModalText}
           />
-        ))
+        )),
       )}
     </div>
   );
@@ -36,7 +36,7 @@ function Person({ src, name, position, ModalText }) {
         </>
       ) : (
         <>
-          <img src={src} alt="team_member" />
+          <img src={src} alt='team_member' />
           <h5>{name}</h5>
           <h6>{position}</h6>
         </>
