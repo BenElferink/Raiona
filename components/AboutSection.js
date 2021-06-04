@@ -1,17 +1,8 @@
-import React, { Children } from "react";
+import { Children } from "react";
 import { aboutSections } from "../data/about.js";
 import styles from "../styles/About.module.css";
 
 export default function AboutSection() {
-  // const [offsetY, setOffsetY] = useState(0);
-  // const handleScroll = () => setOffsetY(window.pageYOffset);
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
-
   return (
     <section className={styles.aboutSection}>
       {Children.toArray(
@@ -32,8 +23,8 @@ export default function AboutSection() {
               Description={x.Description}
               src={x.image}
             />
-          )
-        )
+          ),
+        ),
       )}
     </section>
   );
@@ -52,7 +43,7 @@ function LeftText({ whiteTitle, accentTitle, subTitle, Description, src }) {
       </div>
 
       <div className={styles.shadow} />
-      <img src={src} alt="ai" />
+      <img src={src} alt='ai' />
     </article>
   );
 }
@@ -61,7 +52,7 @@ function RightText({ whiteTitle, accentTitle, subTitle, Description, src }) {
   return (
     <article className={styles.articleRight}>
       <div className={styles.shadow} />
-      <img src={src} alt="ai" />
+      <img src={src} alt='ai' />
 
       <div className={styles.articleTxt}>
         <h2>

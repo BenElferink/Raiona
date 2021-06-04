@@ -1,9 +1,5 @@
 import { Children } from "react";
 import { plansData } from "../data/plans";
-import kingPicture from "../images/plans/king.png";
-import queenPicture from "../images/plans/queen.png";
-import bishopPicture from "../images/plans/bishop.png";
-import knightPicture from "../images/plans/knight.png";
 import styles from "../styles/Planner.module.css";
 
 export default function Plans() {
@@ -24,7 +20,7 @@ export default function Plans() {
             // picture={x.picture}
             Icon={x.Svg}
           />
-        ))
+        )),
       )}
     </div>
   );
@@ -62,7 +58,7 @@ export function Plan({ title, description, type, picture, Icon }) {
           justifyContent: "center",
           marginBottom: "42px",
         }}>
-        {picture && <img src={picture} alt="king" />}
+        {picture && <img src={picture} alt='king' />}
         {Icon && <Icon />}
 
         <p style={{ ...pTagStyle, margin: "0" }}>

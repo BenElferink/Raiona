@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, Children } from "react";
+import { useState } from "react";
 import styles from "../styles/Form.module.css";
 
 export default function ContactForm() {
@@ -15,25 +15,15 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={submitHandler} className={styles.form}>
-      <input
-        name="name"
-        placeholder="Full name"
-        onChange={changeHandler}
-        className={styles.inp}
-      />
-      <input
-        name="email"
-        placeholder="Email"
-        onChange={changeHandler}
-        className={styles.inp}
-      />
+      <input name='name' placeholder='Full name' onChange={changeHandler} className={styles.inp} />
+      <input name='email' placeholder='Email' onChange={changeHandler} className={styles.inp} />
       <textarea
-        name="message"
-        placeholder="Message"
+        name='message'
+        placeholder='Message'
         onChange={changeHandler}
         className={styles.msg}
       />
-      <button type="sybmit" className={styles.btn}>
+      <button type='sybmit' className={styles.btn}>
         Submit
       </button>
     </form>

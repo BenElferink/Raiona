@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from "react";
 import styles from "../styles/Banner.module.css";
 import Link from "next/link";
 import useMediaQuery from "../hooks/useMediaQuery";
-import deskTopImage from "../images/logo.png";
+import desktopImage from "../images/logo.png";
+import { useEffect, useRef } from "react";
 
 function Banner() {
   const isDesktop = useMediaQuery("(min-width: 768px)");
@@ -26,7 +26,7 @@ function Banner() {
           width: "69%",
           boxShadow: "0 0 1rem 0.7rem black",
         }}>
-        <source src="/videos/bannerVid.mp4" />
+        <source src='/videos/bannerVid.mp4' />
       </video>
       <div className={styles.overlay}>
         <BannerText />
@@ -35,7 +35,7 @@ function Banner() {
   ) : (
     <div className={styles.banner}>
       <div>
-        <Link href="/contact">
+        <Link href='/contact'>
           <button className={styles.btn}>Sign up</button>
         </Link>
       </div>
@@ -47,7 +47,7 @@ function Banner() {
 function BannerText() {
   return (
     <center style={{ padding: "0 69px" }}>
-      <img src={deskTopImage} alt="logo" />
+      <img src={desktopImage} alt='logo' />
     </center>
   );
 }

@@ -1,6 +1,6 @@
 import { useState, Children } from "react";
-import styles from "../styles/Teams.module.css";
 import { teamPeople } from "../data/teams.js";
+import styles from "../styles/Teams.module.css";
 
 export default function TeamsSection() {
   return (
